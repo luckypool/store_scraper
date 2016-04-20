@@ -1,4 +1,28 @@
+require "store_scraper/itunes/plugin/constants"
+require "store_scraper/itunes/plugin/validator"
 
-# https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/
-#
-# https://itunes.apple.com/lookup?id=284910350
+module StoreScraper::Itunes
+  class App
+    include Constants
+    include Validator
+
+    attr_reader :country, :client
+
+    # https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/
+    # ex.) https://itunes.apple.com/lookup?id=284910350
+    def initialize(country)
+      @country = validate_country(country)
+      @client  = ::StoreScraper::Client.new(URL_PREFIX)
+    end
+
+    def find(id)
+      path = build_path(id)
+      response = client.get(path)
+      response.body
+    end
+
+    def build_path(id)
+      "/#{country}/lookup?id=#{id}"
+    end
+  end
+end
