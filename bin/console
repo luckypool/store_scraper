@@ -10,5 +10,6 @@ require "store_scraper"
 # require "pry"
 # Pry.start
 
-require "irb"
-IRB.start
+require "pry-byebug"
+binding.pry
+puts 'finish'
