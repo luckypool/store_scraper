@@ -3,6 +3,8 @@ module StoreScraper
     module Constants
       URL_PREFIX = 'https://itunes.apple.com'
 
+      MAX_LIMIT  = 200
+
       # ref: https://affiliate.itunes.apple.com/resources/documentation/linking-to-the-itunes-music-store/
       COUNTRY_TABLE = {
         "ae" => "United Arab Emirates",

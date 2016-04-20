@@ -1,5 +1,5 @@
-require "store_scraper/itunes/constants"
 require "store_scraper/itunes/ranking"
+require "store_scraper/itunes/app"
 
 module StoreScraper
   module Itunes

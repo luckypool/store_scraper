@@ -1,5 +1,6 @@
+require "store_scraper/itunes/plugin/constants"
+require "store_scraper/itunes/plugin/validator"
 require "store_scraper/itunes/ranking/entry"
-require "store_scraper/itunes/ranking/validator"
 
 module StoreScraper::Itunes
   class Ranking
@@ -10,7 +11,6 @@ module StoreScraper::Itunes
     attr_reader :country, :feed_type, :limit, :genre
 
     FETCH_TYPE = 'json'
-    MAX_LIMIT  = 200
 
     # See: RSS Generator, https://rss.itunes.apple.com/jp/
     # ex.) https://itunes.apple.com/jp/rss/topgrossingapplications/limit=10/xml
