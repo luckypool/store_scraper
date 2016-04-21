@@ -1,5 +1,3 @@
-require "store_scraper/itunes/plugin/constants"
-require "store_scraper/itunes/plugin/validator"
 require "store_scraper/itunes/ranking/entry"
 
 module StoreScraper::Itunes
