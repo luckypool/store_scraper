@@ -1,0 +1,15 @@
+Documentation:
+  Enabled: false
+Style/AsciiComments:
+  Enabled: false
+CyclomaticComplexity:
+    Max: 15
+NumericLiterals:
+  Enabled: false
+Metrics/LineLength:
+  Max: 150
+AllCops:
+  Exclude:
+    - 'vendor/**/*'
+    - 'bin/*'
+
