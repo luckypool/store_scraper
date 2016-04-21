@@ -10,9 +10,9 @@ module StoreScraper
       @client = Faraday.new(url: url) do |faraday|
         faraday.request  :url_encoded
         # faraday.response :logger
-        faraday.response :xml,  :content_type => /\bxml/
-        faraday.response :mashify, :content_type => /\b(json|javascript)/
-        faraday.response :json, :content_type => /\b(json|javascript)/
+        faraday.response :xml, content_type: /\bxml/
+        faraday.response :mashify, content_type: /\b(json|javascript)/
+        faraday.response :json, content_type: /\b(json|javascript)/
         faraday.adapter Faraday.default_adapter
       end
     end
