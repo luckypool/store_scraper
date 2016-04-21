@@ -10,6 +10,6 @@ Metrics/LineLength:
   Max: 150
 AllCops:
   Exclude:
-    - 'real_data/**/*'
     - 'vendor/**/*'
+    - 'bin/*'
 
