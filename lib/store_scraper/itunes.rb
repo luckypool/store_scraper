@@ -1,6 +1,6 @@
-require "store_scraper/itunes/plugin"
-require "store_scraper/itunes/ranking"
-require "store_scraper/itunes/app"
+require 'store_scraper/itunes/plugin'
+require 'store_scraper/itunes/ranking'
+require 'store_scraper/itunes/app'
 
 module StoreScraper
   module Itunes

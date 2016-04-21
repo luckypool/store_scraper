@@ -1,4 +1,4 @@
-require "store_scraper/itunes/plugin/constants"
+require 'store_scraper/itunes/plugin/constants'
 
 module StoreScraper::Itunes
   module Validator
@@ -15,17 +15,17 @@ module StoreScraper::Itunes
 
     def validate_country(country)
       return country if ::StoreScraper::Itunes::Constants::COUNTRIES.include?(country)
-      fail InvalidCountryError.new("'#{country}' is unknown.")
+      raise InvalidCountryError.new("'#{country}' is unknown.")
     end
 
     def validate_feed_type(feed_type)
       return feed_type if ::StoreScraper::Itunes::Constants::FEED_TYPES.include?(feed_type)
-      fail InvalidFeedTypeError.new("#{feed_type} is unknown.")
+      raise InvalidFeedTypeError.new("#{feed_type} is unknown.")
     end
 
     def validate_limit(limit)
       return limit if limit.to_i.between?(1, ::StoreScraper::Itunes::Constants::MAX_LIMIT)
-      fail InvalidLimitError.new("#{limit} is out of range.")
+      raise InvalidLimitError.new("#{limit} is out of range.")
     end
 
     def validate_genre(genre)
