@@ -4,6 +4,8 @@ Style/AsciiComments:
   Enabled: false
 CyclomaticComplexity:
     Max: 15
+StringLiterals:
+  Enabled: false
 NumericLiterals:
   Enabled: false
 Metrics/LineLength:
