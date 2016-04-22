@@ -1,3 +1,5 @@
+require 'store_scraper/itunes/app/entity'
+
 module StoreScraper
   module Itunes
     class App
@@ -16,7 +18,7 @@ module StoreScraper
       def find(id = 658511662) # モンスト
         path = build_path(id)
         response = client.get(path)
-        response.body
+        Entity.new(response.body.results.first)
       end
 
       def build_path(id)

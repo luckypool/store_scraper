@@ -1,0 +1,123 @@
+{
+  "feed": {
+    "author": {
+      "name": {
+        "label": "iTunes Store"
+      },
+      "uri": {
+        "label": "http://www.apple.com/jp/itunes/"
+      }
+    },
+    "entry": {
+      "im:name": {
+        "label": "モンスターストライク"
+      },
+      "im:image": [
+        {
+          "label": "http://is1.mzstatic.com/image/thumb/Purple69/v4/e0/25/5f/e0255fb1-9d87-3b6e-4c7b-027722d85023/mzl.afyfvfut.png/53x53bb-85.png",
+          "attributes": {
+            "height": "53"
+          }
+        },
+        {
+          "label": "http://is5.mzstatic.com/image/thumb/Purple69/v4/e0/25/5f/e0255fb1-9d87-3b6e-4c7b-027722d85023/mzl.afyfvfut.png/75x75bb-85.png",
+          "attributes": {
+            "height": "75"
+          }
+        },
+        {
+          "label": "http://is4.mzstatic.com/image/thumb/Purple69/v4/e0/25/5f/e0255fb1-9d87-3b6e-4c7b-027722d85023/mzl.afyfvfut.png/100x100bb-85.png",
+          "attributes": {
+            "height": "100"
+          }
+        }
+      ],
+      "summary": {
+        "label": "◆祝・利用者3000万人突破！／テレビCM絶賛放映中！◆\n\n最大4人同時に楽しめる「ひっぱりハンティングRPG!」\nモンスターマスターになって様々な能力を持つモンスターをたくさん集めよう！ \n1000種類を超える個性豊かなモンスターが君を待ってるぞ！ \n\n【ゲーム紹介】 \n\n▼ルールは簡単 \nモンスターを引っぱって敵に当てるだけ！ \n味方モンスターに当てると、友情コンボが発動！ \n一見攻撃力の弱いモンスターもコンボが発動すると、意外な力を発揮するかも?！ \n\n▼決めろストライクショット！ \nバトルのターンが経過すると必殺技「ストライクショット」が使えるぞ！ \nモンスターによって技は様々、君はすぐ使う派？ボスまで待つ派？ \n使うタイミングが生死を分ける!? \n\n▼集めて育てて強くなれ！ \nバトルやガチャでGetしたモンスターを合成して育てよう！ \n強く進化させるにはモンスター以外に進化素材が必要になるぞ。 \n強いモンスターを育てて君だけの最強チームを作ろう！ \n\n▼天空より舞い降りし、異界のモンスター！ \nボスがステージの最後に出るとは限らないぞ！ \nどんな時も万全の態勢で戦いに挑むべし！ \n\n▼友達と一緒に、強敵を倒そう！ \n近くにいる友達と、最大4人まで同時プレイが可能！\nなんと1人分のスタミナでクエストに挑めるぞ！ \n1人では倒せない強敵も、みんなで力を合わせれば倒せるかも!? \nマルチプレイ専用のレアなクエストも盛りだくさん！\nレアモンスターを倒してゲットしよう！ \n\n\n+++【価格】+++ \nアプリ本体：無料 \n※一部有料アイテムがございます。 \n\n+++【推奨端末】+++ \niOS 7.0 以降／iPhone 4s以降,iPod touch(第5世代以降),iPad2以降\n※推奨端末以外でのサポート、補償等は致しかねますので何卒ご了承くださいませ。\n\nご利用前に「アプリケーション使用許諾契約」に \n表示されている利用規約を必ずご確認の上ご利用ください。"
+      },
+      "im:price": {
+        "label": "入手",
+        "attributes": {
+          "amount": "0.00000",
+          "currency": "JPY"
+        }
+      },
+      "im:contentType": {
+        "attributes": {
+          "term": "Application",
+          "label": "アプリケーション"
+        }
+      },
+      "rights": {
+        "label": "© mixi, Inc."
+      },
+      "title": {
+        "label": "モンスターストライク - mixi, Inc"
+      },
+      "link": {
+        "attributes": {
+          "rel": "alternate",
+          "type": "text/html",
+          "href": "https://itunes.apple.com/jp/app/monsutasutoraiku/id658511662?mt=8&uo=2"
+        }
+      },
+      "id": {
+        "label": "https://itunes.apple.com/jp/app/monsutasutoraiku/id658511662?mt=8&uo=2",
+        "attributes": {
+          "im:id": "658511662",
+          "im:bundleId": "jp.co.mixi.monsterstrike"
+        }
+      },
+      "im:artist": {
+        "label": "mixi, Inc",
+        "attributes": {
+          "href": "https://itunes.apple.com/jp/developer/mikushi-i/id285951869?mt=8&uo=2"
+        }
+      },
+      "category": {
+        "attributes": {
+          "im:id": "6014",
+          "term": "Games",
+          "scheme": "https://itunes.apple.com/jp/genre/ios-gemu/id6014?mt=8&uo=2",
+          "label": "ゲーム"
+        }
+      },
+      "im:releaseDate": {
+        "label": "2013-09-27T00:00:00-07:00",
+        "attributes": {
+          "label": "2013年9月27日"
+        }
+      }
+    },
+    "updated": {
+      "label": "2016-04-21T21:01:19-07:00"
+    },
+    "rights": {
+      "label": "Copyright 2008 Apple Inc."
+    },
+    "title": {
+      "label": "iTunes Store: トップセールス App"
+    },
+    "icon": {
+      "label": "http://itunes.apple.com/favicon.ico"
+    },
+    "link": [
+      {
+        "attributes": {
+          "rel": "alternate",
+          "type": "text/html",
+          "href": "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewTop?cc=jp&id=1000&popId=38"
+        }
+      },
+      {
+        "attributes": {
+          "rel": "self",
+          "href": "https://itunes.apple.com/jp/rss/topgrossingapplications/limit=1/json"
+        }
+      }
+    ],
+    "id": {
+      "label": "https://itunes.apple.com/jp/rss/topgrossingapplications/limit=1/json"
+    }
+  }
+}
