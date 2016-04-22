@@ -30,7 +30,7 @@ module StoreScraper
         end
 
         def rank
-          raw_element.at_css('.title').inner_text.gsub(/ /, '').match(/^(\d+)/)[0].to_i
+          raw_element.at_css('.title').inner_text.delete(' ').match(/^(\d+)/)[0].to_i
         end
       end
     end
