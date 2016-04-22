@@ -22,7 +22,55 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### StoreScraper::Itunes::Ranking
+
+Initialize ranking:
+
+```
+jp_game_ranking = StoreScraper::Itunes::Ranking.new(limit: 10, country: 'jp', feed_type: 'topgrossingapplications', genre: 'games')
+```
+
+#### find\_by\_id
+
+```
+jp_game_ranking.find_by_id(658511662).title
+# => "モンスターストライク"
+```
+
+#### find\_by\_rank
+
+```
+jp_game_ranking.find_by_rank(3).title
+# => "LINE：ディズニー ツムツム"
+```
+
+#### all
+
+```
+jp_game_ranking.all
+# => Array of StoreScraper::Itunes::Ranking::Entity objects
+```
+
+### StoreScraper::Itunes::App
+
+Initialize app:
+
+```
+app_finder = StoreScraper::Itunes::App.new
+```
+
+#### find
+
+This method call lookup API
+
+- ref: https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/
+
+```
+app_finder.find(658511662).title
+# => "モンスターストライク"
+```
+
+### StoreScraper::Itunes::App::Entity
 
 ## Development
 

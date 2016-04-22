@@ -41,6 +41,11 @@ module StoreScraper
         def summary
           raw_entry.summary.label
         end
+
+        def to_hash
+          attributes = %i(id title bundle_id category image publisher link summary)
+          Hash[attributes.map { |key| [key.to_s, send(key)] }]
+        end
       end
     end
   end
