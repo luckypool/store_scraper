@@ -10,6 +10,8 @@ NumericLiterals:
   Enabled: false
 Metrics/LineLength:
   Max: 150
+DotPosition:
+  EnforcedStyle: leading
 AllCops:
   Exclude:
     - 'vendor/**/*'
