@@ -1,7 +1,7 @@
 module StoreScraper
   module Itunes
     class Ranking
-      class Entry
+      class Entity
         attr_reader :rank
         attr_reader :raw_entry
 
