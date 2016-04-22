@@ -1,4 +1,4 @@
-require 'store_scraper/itunes/ranking/entry'
+require 'store_scraper/itunes/ranking/entity'
 
 module StoreScraper
   module Itunes
@@ -29,7 +29,7 @@ module StoreScraper
 
       def all
         @entries ||= fetch_feed.entry.map.with_index(1) do |entry, rank|
-          Entry.new(entry, rank)
+          Entity.new(entry, rank)
         end
       end
 
