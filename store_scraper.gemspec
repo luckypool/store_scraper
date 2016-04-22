@@ -29,6 +29,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'pry-byebug'
   spec.add_development_dependency 'coveralls'
   spec.add_development_dependency 'simplecov'
+  spec.add_development_dependency 'webmock'
   spec.add_development_dependency 'rubocop'
   spec.add_development_dependency 'guard'
   spec.add_development_dependency 'guard-rspec'

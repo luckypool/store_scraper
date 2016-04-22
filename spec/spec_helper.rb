@@ -1,6 +1,6 @@
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
-require 'store_scraper'
 require 'rspec'
+require 'webmock'
 
 require 'simplecov'
 require 'coveralls'
@@ -15,4 +15,8 @@ SimpleCov.formatters = [
 SimpleCov.start do
   add_filter '.bundle/'
   add_filter 'vendor'
+  add_filter 'spec'
+  add_group 'Libraries', 'lib'
 end
+
+require 'store_scraper'
