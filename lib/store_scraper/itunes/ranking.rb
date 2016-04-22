@@ -24,11 +24,12 @@ module StoreScraper
       end
 
       def raw_entries
-        fetch_feed.entry
+        entry = fetch_feed.entry
+        entry.class == Array ? entry : [entry]
       end
 
       def all
-        @entries ||= fetch_feed.entry.map.with_index(1) do |entry, rank|
+        @entries ||= raw_entries.map.with_index(1) do |entry, rank|
           Entity.new(entry, rank)
         end
       end
