@@ -34,14 +34,14 @@ jp_game_ranking = StoreScraper::Itunes::Ranking.new(limit: 10, country: 'jp', fe
 
 ```
 jp_game_ranking.find_by_id(658511662).title
-# => "$B%b%s%9%?!<%9%H%i%$%/(B"
+# => "モンスターストライク"
 ```
 
 #### find\_by\_rank
 
 ```
 jp_game_ranking.find_by_rank(3).title
-# => "LINE$B!'%G%#%:%K!<(B $B%D%`%D%`(B"
+# => "LINE：ディズニー ツムツム"
 ```
 
 #### all
@@ -67,7 +67,7 @@ This method call lookup API
 
 ```
 app_finder.find(658511662).title
-# => "$B%b%s%9%?!<%9%H%i%$%/(B"
+# => "モンスターストライク"
 ```
 
 ### StoreScraper::Itunes::App::Entity
