@@ -16,17 +16,17 @@ module StoreScraper
 
       def validate_country(country)
         return country if ::StoreScraper::Itunes::Constants::COUNTRIES.include?(country)
-        raise InvalidCountryError "'#{country}' is unknown."
+        raise InvalidCountryError, "'#{country}' is unknown."
       end
 
       def validate_feed_type(feed_type)
         return feed_type if ::StoreScraper::Itunes::Constants::FEED_TYPES.include?(feed_type)
-        raise InvalidFeedTypeError "#{feed_type} is unknown."
+        raise InvalidFeedTypeError, "#{feed_type} is unknown."
       end
 
       def validate_limit(limit)
         return limit if limit.to_i.between?(1, ::StoreScraper::Itunes::Constants::MAX_LIMIT)
-        raise InvalidLimitError"#{limit} is out of range."
+        raise InvalidLimitError, "#{limit} is out of range."
       end
 
       def validate_genre(genre)
