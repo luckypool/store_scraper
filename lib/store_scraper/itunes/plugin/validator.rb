@@ -11,7 +11,7 @@ module StoreScraper
         @country   = validate_country(args[:country])
         @feed_type = validate_feed_type(args[:feed_type])
         @limit     = validate_limit(args[:limit])
-        @genre     = validate_genre(args[:genre])
+        @genre_id  = validate_genre(args[:genre])
       end
 
       def validate_country(country)
@@ -30,8 +30,10 @@ module StoreScraper
       end
 
       def validate_genre(genre)
-        # allow nil
-        ::StoreScraper::Itunes::Constants::GENRE_ID_TABLE[genre]
+        genre_id = ::StoreScraper::Itunes::Constants::GENRE_ID_TABLE[genre]
+        return if genre_id.nil?
+        @genre = genre
+        genre_id
       end
     end
   end
