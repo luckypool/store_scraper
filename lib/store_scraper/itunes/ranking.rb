@@ -23,6 +23,10 @@ module StoreScraper
         fetch_feed.title.label
       end
 
+      def country_name
+        COUNTRY_TABLE[country]
+      end
+
       def raw_entries
         entry = fetch_feed.entry
         entry.class == Array ? entry : [entry]
