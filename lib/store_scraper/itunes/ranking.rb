@@ -13,7 +13,7 @@ module StoreScraper
 
       # See: RSS Generator, https://rss.itunes.apple.com/jp/
       # ex.) https://itunes.apple.com/jp/rss/topgrossingapplications/limit=10/xml
-      def initialize(country: DEFAULT_COUNTRY, feed_type: DEFAULT_FEED_TYPE, limit: MAX_LIMIT, genre: :all)
+      def initialize(country: DEFAULT_COUNTRY, feed_type: DEFAULT_FEED_TYPE, limit: MAX_LIMIT, genre: 'all')
         validate_initialize_args(country: country, feed_type: feed_type, limit: limit, genre: genre)
         @path   = build_path
         @client = ::StoreScraper::Client.new(URL_PREFIX)
