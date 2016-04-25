@@ -1,13 +1,13 @@
 require 'spec_helper'
 
 describe StoreScraper::Itunes::Validator do
-  class ValidatorTest
+  class ItunesValidatorTest
     include StoreScraper::Itunes::Constants
     include StoreScraper::Itunes::Validator
   end
 
   let!(:instance) do
-    ValidatorTest.new
+    ItunesValidatorTest.new
   end
 
   describe '#validate_country' do

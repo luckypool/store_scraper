@@ -25,5 +25,6 @@ describe StoreScraper::Itunes::Ranking do
     its(:publisher) { is_expected.to eq "mixi, Inc" }
     its(:link) { is_expected.to be_an_instance_of String }
     its(:summary) { is_expected.to be_an_instance_of String }
+    its(:to_hash) { is_expected.to be_an_instance_of Hash }
   end
 end
