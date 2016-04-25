@@ -3,7 +3,7 @@ module StoreScraper
     module Validator
       class InvalidCategoryTypeError < StandardError; end
       class InvalidRankingTypeError  < StandardError; end
-      class InvalidLimitTypeError    < StandardError; end
+      class InvalidLimitError        < StandardError; end
 
       def validate_initialize_args(args)
         @category_type = validate_category_type(args[:category_type])

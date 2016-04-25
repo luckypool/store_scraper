@@ -65,10 +65,6 @@ module StoreScraper
       def id_index
         @id_index ||= all.group_by(&:id)
       end
-
-      def parse_document
-        @card_list = @document.at_css('.card-list > .card')
-      end
     end
   end
 end
