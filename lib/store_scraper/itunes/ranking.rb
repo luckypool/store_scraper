@@ -7,7 +7,7 @@ module StoreScraper
       include Validator
 
       attr_reader :path, :client
-      attr_reader :country, :feed_type, :limit, :genre
+      attr_reader :country, :feed_type, :limit, :genre, :genre_id
 
       FETCH_TYPE = 'json'.freeze
 
@@ -62,7 +62,7 @@ module StoreScraper
       def build_path
         prefix = "/#{country}/rss/#{feed_type}/limit=#{limit}"
         suffix = FETCH_TYPE
-        option = genre.nil? ? nil : "genre=#{genre}"
+        option = genre.nil? ? nil : "genre=#{genre_id}"
         [prefix, option, suffix].compact.join('/')
       end
     end
