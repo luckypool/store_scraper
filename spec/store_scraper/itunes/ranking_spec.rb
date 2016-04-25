@@ -31,6 +31,10 @@ describe StoreScraper::Itunes::Ranking do
     it { expect(instance.title).to eq "iTunes Store: トップセールス App" }
   end
 
+  describe '#country_name' do
+    it { expect(instance.country_name).to eq 'Japan' }
+  end
+
   describe '#find_by_id' do
     it { expect(instance.find_by_id(658511662)).to eq instance.all.first }
   end
