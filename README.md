@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/luckypool/store_scraper.svg?branch=master)](https://travis-ci.org/luckypool/store_scraper)
 [![Coverage Status](https://coveralls.io/repos/github/luckypool/store_scraper/badge.svg?branch=master)](https://coveralls.io/github/luckypool/store_scraper?branch=master)
+[![Dependency Status](https://gemnasium.com/badges/github.com/luckypool/store_scraper.svg)](https://gemnasium.com/github.com/luckypool/store_scraper)
 
 
 ## Installation
