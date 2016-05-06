@@ -73,6 +73,24 @@ app_finder.find(658511662).title
 
 ### StoreScraper::Itunes::App::Entity
 
+
+```
+jp_ranking = StoreScraper::Itunes::Ranking.new(limit: 10, country: 'jp', feed_type: 'topgrossingapplications', genre: 'games')
+
+first_jp_app = jp_ranking.find_by_rank(1)
+pp first_jp_app.to_hash
+# {
+#   "id"        => 658511662,
+#   "title"     => "モンスターストライク",
+#   "bundle_id" => "jp.co.mixi.monsterstrike",
+#   "category"  => "ゲーム",
+#   "image"     => "http://is1.mzstatic.com/image/thumb/Purple69/v4/e0/25/5f/e0255fb1-9d87-3b6e-4c7b-027722d85023/mzl.afyfvfut.png/53x53bb-85.png",
+#   "publisher" => "mixi, Inc",
+#   "link"      => "https://itunes.apple.com/jp/app/monsutasutoraiku/id658511662?mt=8&uo=2",
+#   "summary"   => "..."
+# }
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
